@@ -13,7 +13,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/quiz', quizRoutes);
 
-app.get('/',res.status(200).json({message:"Welcome to AI Quiz app"}));
+app.get('/',(req,res)=>{res.status(200).json({message:"Welcome to AI Quiz app"})});
 
 app.use((req, res, next) => {
   res.status(404).json({ message: 'Route not found' });
