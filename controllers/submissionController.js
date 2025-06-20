@@ -1,5 +1,5 @@
 import { Quiz } from '../models/Quiz.js';
-import { Submission } from '../models/Submission.js';
+import { Submission } from '../models/submission.js';
 import { v4 as uuidv4 } from 'uuid';
 import { generateFeedbackPrompt } from '../prompt/promptGenerator.js';
 import { callGroq } from '../utils/groqClient.js';
