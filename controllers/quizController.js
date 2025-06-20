@@ -1,6 +1,6 @@
 import { callGroq } from '../utils/groqClient.js';
 import { Quiz } from '../models/Quiz.js';
-import { Submission } from '../models/Submission.js';
+import { Submission } from '../models/submission.js';
 import { generateQuizPrompt,generateHintPrompt } from '../prompt/promptGenerator.js';
 import redis from '../config/redisClient.js';
 // Generate Quiz
